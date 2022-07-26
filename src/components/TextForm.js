@@ -16,7 +16,7 @@ export default function TextForm(props) {
   };
  const handleExtraSpaces = () => {    
     let newText = text.split(/[\n]+/);
-    let newTextJoined = newText.join(' ');
+    let newTextJoined = newText.join('\n');
 
     newText = newTextJoined.split(/[ ]+/);
     newTextJoined = newText.join(' ');

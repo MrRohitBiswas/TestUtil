@@ -17,10 +17,10 @@ export default function TextForm(props) {
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     // console.log(newText)
-    setText(newText.join(" "))
+    let newText2 = (newText.join(' '))
     // console.log(text)
     
-    newText = text.split(/[\n]+/);
+    newText = newText2.split(/[\n]+/);
     setText(newText.join(`\n`));
   };
   const handleClear = () => {

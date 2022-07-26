@@ -14,14 +14,14 @@ export default function TextForm(props) {
     text.select();
     navigator.clipboard.writeText(text.value);
   };
-  const handleExtraSpaces = () => {
-    let newText = text.split(/[ ]+/);
-    // console.log(newText)
-    setText(newText.join(" "))
-    // console.log(text)
-    
-    newText = text.split(/[\n]+/);
-    setText(newText.join(`\n`));
+ const handleExtraSpaces = () => {    
+    let newText = text.split(/[\n]+/);
+    let newTextJoined = newText.join(' ');
+
+    newText = newTextJoined.split(/[ ]+/);
+    newTextJoined = newText.join(' ');
+
+    setText(newTextJoined);
   };
   const handleClear = () => {
     setText("");

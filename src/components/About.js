@@ -5,8 +5,20 @@ export default function About(props) {
     <div className="container">
       <h2 className="my-3">About Us</h2>
       <hr />
-      <div className="accordion" id="accordionExample" >
-        <div className="accordion-item"  style={props.mode==='dark'?{backgroundColor: '#495057',color:'white', border: '1px solid white',borderBottom: 'none'}:{backgroundColor: '#f8f9fa'}}>
+      <div className="accordion" id="accordionExample">
+        <div
+          className="accordion-item"
+          style={
+            props.mode === "dark"
+              ? {
+                  backgroundColor: "#495057",
+                  color: "white",
+                  border: "1px solid white",
+                  borderBottom: "none",
+                }
+              : { backgroundColor: "#f8f9fa" }
+          }
+        >
           <h2 className="accordion-header" id="headingOne">
             <button
               className="accordion-button"
@@ -15,9 +27,18 @@ export default function About(props) {
               data-bs-target="#collapseOne"
               aria-expanded="true"
               aria-controls="collapseOne"
-              style={props.mode==='dark'?{backgroundColor: '#495057',color:'white',border: '0.5px solid white',borderBottom: 'none'}:{backgroundColor: '#f8f9fa'}}
+              style={
+                props.mode === "dark"
+                  ? {
+                      backgroundColor: "#495057",
+                      color: "white",
+                      border: "0.5px solid white",
+                      borderBottom: "none",
+                    }
+                  : { backgroundColor: "#f8f9fa" }
+              }
             >
-              Accordion Item #1
+              About TextUtils
             </button>
           </h2>
           <div
@@ -25,21 +46,35 @@ export default function About(props) {
             className="accordion-collapse collapse show"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
-            
           >
             <div className="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>
+                This was mainly made for the evolution of mankind.
+              </strong>{" "}
+              It was honored by the touch of Rohit Biswas. This kind-hearted man
+              made this application with his own hands. Human kind was blessed
+              with TextUtils to manipulate their texts into NOTHING much but you
+              are bound to consider this as holy gift from Lord Biswas. Go to
+              the homepage and receive the heavenly touch and pure yourself. Do
+              not be greedy and keep using on your own, let the other mankinds
+              have the opportunity to have this on their own hands.
+              <em> Adiós.</em>
             </div>
           </div>
         </div>
-        <div className="accordion-item"  style={props.mode==='dark'?{backgroundColor: '#495057',color:'white', border: '1px solid white',borderBottom: 'none'}:{backgroundColor: '#f8f9fa'}}>
+        <div
+          className="accordion-item"
+          style={
+            props.mode === "dark"
+              ? {
+                  backgroundColor: "#495057",
+                  color: "white",
+                  border: "1px solid white",
+                  borderBottom: "none",
+                }
+              : { backgroundColor: "#f8f9fa" }
+          }
+        >
           <h2 className="accordion-header" id="headingTwo">
             <button
               className="accordion-button collapsed"
@@ -48,9 +83,18 @@ export default function About(props) {
               data-bs-target="#collapseTwo"
               aria-expanded="false"
               aria-controls="collapseTwo"
-              style={props.mode==='dark'?{backgroundColor: '#495057',color:'white', border: '1px solid white',borderBottom: 'none'}:{backgroundColor: '#f8f9fa'}}
+              style={
+                props.mode === "dark"
+                  ? {
+                      backgroundColor: "#495057",
+                      color: "white",
+                      border: "1px solid white",
+                      borderBottom: "none",
+                    }
+                  : { backgroundColor: "#f8f9fa" }
+              }
             >
-              Accordion Item #2
+              Picture of the Founder
             </button>
           </h2>
           <div
@@ -60,18 +104,27 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>
+                No human is allowed to see Almighty Lord with naked eye
+              </strong>
+              <hr />
+              <img src="image.jpg" alt="banner" style={{ width: "100%" }} />
             </div>
           </div>
         </div>
-        <div className="accordion-item"  style={props.mode==='dark'?{backgroundColor: '#495057',color:'white', border: '1px solid white',borderBottom: 'none'}:{backgroundColor: '#f8f9fa'}}>
+        <div
+          className="accordion-item"
+          style={
+            props.mode === "dark"
+              ? {
+                  backgroundColor: "#495057",
+                  color: "white",
+                  border: "1px solid white",
+                  borderBottom: "none",
+                }
+              : { backgroundColor: "#f8f9fa" }
+          }
+        >
           <h2 className="accordion-header" id="headingThree">
             <button
               className="accordion-button collapsed"
@@ -80,9 +133,17 @@ export default function About(props) {
               data-bs-target="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree"
-              style={props.mode==='dark'?{backgroundColor: '#495057',color:'white', border: '1px solid white'}:{backgroundColor: '#f8f9fa'}}
+              style={
+                props.mode === "dark"
+                  ? {
+                      backgroundColor: "#495057",
+                      color: "white",
+                      border: "1px solid white",
+                    }
+                  : { backgroundColor: "#f8f9fa" }
+              }
             >
-              Accordion Item #3
+              Contact Details
             </button>
           </h2>
           <div
@@ -92,14 +153,69 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>Purify yourself before contacting</strong>
+              <hr />
+              <ul class="list-group">
+                <li
+                  class="list-group-item"
+                  style={
+                    props.mode === "dark"
+                      ? {
+                          backgroundColor: "#495057",
+                          color: "white",
+                          border: "0.5px solid white",
+                          borderBottom: "none",
+                        }
+                      : { backgroundColor: "#f8f9fa" }
+                  }
+                >
+                  E-mail :- <a href="https://mail.google.com/mail/u/1/#inbox?compose=SxfkdsGjqPnGJgKvSWqMwLQDNvBQFQTrgncskVtlsxPkFfmDdClflgWkQmTxFlffRRVngxJGLfBWhLHxpLfJRbLSngplRlRNdRDxcVwscRcKRGFqjJV" target="_blank" rel="noreferrer">rohitbiswas31012001@gmail.com</a>
+                </li>
+                <li
+                  class="list-group-item"
+                  style={
+                    props.mode === "dark"
+                      ? {
+                          backgroundColor: "#495057",
+                          color: "white",
+                          border: "0.5px solid white",
+                          borderBottom: "none",
+                        }
+                      : { backgroundColor: "#f8f9fa" }
+                  }
+                >
+                  Mobile No :- 8420743341
+                </li>
+                <li
+                  class="list-group-item"
+                  style={
+                    props.mode === "dark"
+                      ? {
+                          backgroundColor: "#495057",
+                          color: "white",
+                          border: "0.5px solid white",
+                          borderBottom: "none",
+                        }
+                      : { backgroundColor: "#f8f9fa" }
+                  }
+                >
+                  GitHub :- <a href="https://github.com/MrRohitBiswas" target="_blank" rel="noreferrer">github.com/MrRohitBiswas</a>
+                </li>
+                <li
+                  class="list-group-item"
+                  style={
+                    props.mode === "dark"
+                      ? {
+                          backgroundColor: "#495057",
+                          color: "white",
+                          border: "0.5px solid white",
+                        }
+                      : { backgroundColor: "#f8f9fa" }
+                  }
+                >
+                  LinkedIn :- <a href="https://linkedin.com/in/mr-rohit-biswas" target="_blank" rel="noreferrer">linkedin.com/in/mr-rohit-biswas</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

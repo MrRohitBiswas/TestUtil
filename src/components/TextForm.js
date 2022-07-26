@@ -2,9 +2,12 @@ import React, { useState } from "react";
 export default function TextForm(props) {
   const handleUpClick = () => {
     setText(text.toUpperCase());
+    props.showAlert(`The text has been converted to Upper Case!`,"success");
   };
   const handleLowerClick = () => {
     setText(text.toLowerCase());
+    props.showAlert("The text has been converted to Lower Case!","success");
+
   };
   const handleOnChange = (event) => {
     setText(event.target.value);
@@ -13,18 +16,21 @@ export default function TextForm(props) {
     let text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("The text has been copied!","success");
+
   };
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
-    // console.log(newText)
     let newText2 = (newText.join(' '))
-    // console.log(text)
-    
     newText = newText2.split(/[\n]+/);
     setText(newText.join(`\n`));
+    props.showAlert("The extra spaces in the text have been removed!","success");
+    
   };
   const handleClear = () => {
     setText("");
+    props.showAlert("The text has been cleared!","success");
+
   };
   function wordCount(str) {
     let temp = str.replace(/(\r\n|\n|\r)/gm, " ");

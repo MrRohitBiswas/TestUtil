@@ -155,9 +155,9 @@ export default function About(props) {
             <div className="accordion-body">
               <strong>Purify yourself before contacting</strong>
               <hr />
-              <ul class="list-group">
+              <ul className="list-group">
                 <li
-                  class="list-group-item"
+                  className="list-group-item"
                   style={
                     props.mode === "dark"
                       ? {
@@ -169,10 +169,17 @@ export default function About(props) {
                       : { backgroundColor: "#f8f9fa" }
                   }
                 >
-                  E-mail :- <a href="https://mail.google.com/mail/u/1/#inbox?compose=SxfkdsGjqPnGJgKvSWqMwLQDNvBQFQTrgncskVtlsxPkFfmDdClflgWkQmTxFlffRRVngxJGLfBWhLHxpLfJRbLSngplRlRNdRDxcVwscRcKRGFqjJV" target="_blank" rel="noreferrer">rohitbiswas31012001@gmail.com</a>
+                  E-mail :-{" "}
+                  <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    rohitbiswas31012001@gmail.com
+                  </a>
                 </li>
                 <li
-                  class="list-group-item"
+                  className="list-group-item"
                   style={
                     props.mode === "dark"
                       ? {
@@ -187,7 +194,7 @@ export default function About(props) {
                   Mobile No :- 8420743341
                 </li>
                 <li
-                  class="list-group-item"
+                  className="list-group-item"
                   style={
                     props.mode === "dark"
                       ? {
@@ -199,10 +206,17 @@ export default function About(props) {
                       : { backgroundColor: "#f8f9fa" }
                   }
                 >
-                  GitHub :- <a href="https://github.com/MrRohitBiswas" target="_blank" rel="noreferrer">github.com/MrRohitBiswas</a>
+                  GitHub :-{" "}
+                  <a
+                    href="https://github.com/MrRohitBiswas"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github.com/MrRohitBiswas
+                  </a>
                 </li>
                 <li
-                  class="list-group-item"
+                  className="list-group-item"
                   style={
                     props.mode === "dark"
                       ? {
@@ -213,7 +227,14 @@ export default function About(props) {
                       : { backgroundColor: "#f8f9fa" }
                   }
                 >
-                  LinkedIn :- <a href="https://linkedin.com/in/mr-rohit-biswas" target="_blank" rel="noreferrer">linkedin.com/in/mr-rohit-biswas</a>
+                  LinkedIn :-{" "}
+                  <a
+                    href="https://linkedin.com/in/mr-rohit-biswas"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin.com/in/mr-rohit-biswas
+                  </a>
                 </li>
               </ul>
             </div>

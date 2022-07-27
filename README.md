@@ -8,7 +8,11 @@ In the project directory, you can run:
 
 
 ## **Preview**
-https://user-images.githubusercontent.com/51377066/180963661-ae9256d5-5d33-4b37-803d-5c5121a66b59.mp4
+
+
+https://user-images.githubusercontent.com/51377066/181210898-f9c61808-41ee-4fa2-abbc-86d0a4306091.mp4
+
+
 
 ### `npm start`
 
